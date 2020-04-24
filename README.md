@@ -10,5 +10,5 @@ npm install
 
 Para la ayuda:
 ```
-node app -h
+node app --help
 ```
