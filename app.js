@@ -1,17 +1,13 @@
 //npm install colors --save
 //--save agrega este modulo como un paquete de dependencia, consultar en package.json
-
-
 //forma correcta modulos del sistema y despues mis modulos
 var colors = require('colors/safe');
-
 //aumentar el .argv para acortar la instancia al llamar el atributo
 const argv = require("./config/yargs").argv;
 /////CORE APLICACION
 const { crearArchivo, listarTabla } = require("./multiplicar/multiplicar")
-
-//argv es un objeto
-//console.log(argv.base, argv.limite);
+    //argv es un objeto
+    //console.log(argv.base, argv.limite);
 let comando = argv._[0];
 let base = argv.base
 let limite = argv.limite
@@ -31,14 +27,7 @@ switch (comando) {
         break;
     default:
         console.log('comando no válido');
-
 }
-
-
-
-
-
-
 //console.log(module);
 //(CONTIENE TODA LA INFO DEL SISTEMA)donde es, que modulos tiene-- entonces  el process.argv
 //donde esta guardado el interprete 
@@ -48,5 +37,4 @@ switch (comando) {
 //node app listar --base=5 --limite=10
 //const { crearArchivo } = require("./multiplicar/multiplicar")
 //let base = 9;
-
 // let base = process.argv[2].split('=' [1]);
